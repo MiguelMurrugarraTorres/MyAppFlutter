@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:untitled/src/utils/my_colors.dart';
+import 'package:lottie/lottie.dart';
 
 
 
@@ -42,7 +43,8 @@ class _LoginPageState extends State<LoginPage> {
 
             Column(
                children:[
-                 _imageBanner(),
+                 //_imageBanner(),
+                 _lottieAnimation(),
                  _textFielEmail(),
                  _textFielPassword(),
                  _buttonLogin(),
@@ -129,7 +131,8 @@ class _LoginPageState extends State<LoginPage> {
     return  Container(
       margin: EdgeInsets.only(
           top:100,
-          bottom: MediaQuery.of(context).size.height * 0.22),
+          bottom: MediaQuery.of(context).size.height * 0.22
+      ),
 
       child: Image.asset('assets/img/delivery.png',
         width: 200,
@@ -187,5 +190,18 @@ class _LoginPageState extends State<LoginPage> {
     );
   }
 
-
+  Widget _lottieAnimation(){
+  return Container(
+    margin: EdgeInsets.only(
+        top:150,
+        bottom: MediaQuery.of(context).size.height * 0.17
+    ),
+    child: Lottie.asset(
+        'assets/json/delivery.json',
+         width: 350,
+         height: 200,
+         fit: BoxFit.fill
+    ),
+  );
+  }
 }

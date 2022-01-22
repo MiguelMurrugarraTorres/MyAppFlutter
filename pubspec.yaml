@@ -20,6 +20,10 @@ version: 1.0.0+1
 environment:
   sdk: ">=2.12.0 <3.0.0"
 
+
+
+
+
 # Dependencies specify other packages that your package needs in order to work.
 # To automatically upgrade your package dependencies to the latest versions
 # consider running `flutter pub upgrade --major-versions`. Alternatively,
@@ -29,6 +33,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  lottie: ^1.2.1
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -64,6 +69,7 @@ flutter:
 
   assets:
     - assets/img/
+    - assets/json/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
